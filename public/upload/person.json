@@ -1,0 +1,155 @@
+{
+	"profile":{
+		"title":"Profile",
+		"pic":"/upload/person.jpg",
+		"BigName":"Jason lees",
+		"Designer":"Game/Server",
+		"Designer_pos":"(Nodejs, C++, java)",
+		"small":{
+			"Birthday":"1989-08",
+			"Address":"Beijing",
+			"Phone":"12345678901",
+			"Email":"taozi031@163.com",
+			"Website":"https://jasonlees.netlify.com",
+			"Github":"https://github.com/IceFrozen"
+		},
+		"description":[
+			"Poster Design: XXXXXX25th Anniversary poster (2014.02)",
+			"Poster Design: Recruiting poster for ********Club, recruiting poster with the anime characters in the background (2012.12)",
+			"Logo Design: **********Restaurant Logo (2013.10)。",
+			"and-drawn Comic: Story of xxxxxx,  the description of ******life (2011-2014)"
+		]
+	},
+	"contact":[
+		{
+			"title":"rss",
+			"url":"http://www.baidu.com",
+			"type":"rss"
+		},{
+			"title":"Facebook",
+			"url":"http://www.baidu.com",
+			"type":"fb"
+		},{
+			"title":"Google+",
+			"url":"http://www.baidu.com",
+			"type":"gplus"
+		},{
+			"title":"Linkedin",
+			"url":"http://www.baidu.com",
+			"type":"lnkd"
+		},{
+			"title":"Dribbble",
+			"url":"http://www.baidu.com",
+			"type":"drb"
+		},{
+			"title":"Pinterst",
+			"url":"http://www.baidu.com",
+			"type":"pin"
+		},{
+			"title":"Twitter",
+			"url":"http://www.baidu.com",
+			"type":"tw"
+		},
+		{
+			"title":"Vimeo",
+			"url":"http://www.baidu.com",
+			"type":"vim"
+		}
+	],
+	"worktime":{
+		"title":"ERSONAL WORKS",
+		"skills":[
+			{
+				"name":"Programming skills",
+				"type":1,
+				"detail":[
+					{"name":"Nodejs","process":80,"color":"red"},
+					{"name":"c++","process":60,"color":"green"},
+					{"name":"java","process":70,"color":"blue"},
+					{"name":"python","process":50,"color":"yellow"},
+					{"name":"Shell","process":50,"color":"aqua"}
+				]
+			},
+			{
+				"name":"Other skills",
+				"type":3,
+				"detail":[
+					{"name":"Nodejs","process":80,"color":"red"},
+					{"name":"c++","process":60,"color":"green"},
+					{"name":"java","process":70,"color":"blue"},
+					{"name":"python","process":50,"color":"yellow"},
+					{"name":"Shell","process":50,"color":"aqua"}
+				]
+			},
+			{
+				"name":"Language skills",
+				"type":2,
+				"detail":[
+					{"name":"Nodejs","process":80,"color":"red"},
+					{"name":"c++","process":60,"color":"green"},
+					{"name":"java","process":70,"color":"blue"},
+					{"name":"python","process":50,"color":"yellow"},
+					{"name":"Shell","process":50,"color":"aqua"}
+					]
+			}
+		],
+
+		"projects":[
+			{
+				"company":"Google Corporation",
+				"task":[
+					{"title":"title","time":"2013-2015","position":"position","description":["project description one","project description two"]},
+					{"title":"title","time":"2013-2015","position":"position","description":["project description","project description two"]},
+					{"title":"title","time":"2013-2015","position":"position","description":["project description","project description two"]},
+					{"title":"title","time":"2013-2015","position":"position","description":["project description","project description two"]}
+				]
+			},
+			{
+				"company":"Google Corporation",
+				"task":[
+					{"title":"title","time":"2013-2015","position":"position","description":["project description","project description two"]},
+					{"title":"title","time":"2013-2015","position":"position","description":["project description","project description two"]},
+					{"title":"title","time":"2013-2015","position":"position","description":["project description","project description two"]},
+					{"title":"title","time":"2013-2015","position":"position","description":["project description","project description two"]}
+				]
+			},
+			{
+				"company":"Google Corporation",
+				"task":[
+					{"title":"title","time":"2013-2015","position":"position","description":["project description","project description two"]},
+					{"title":"title","time":"2013-2015","position":"position","description":["project description","project description two"]},
+					{"title":"title","time":"2013-2015","position":"position","description":["project description","project description two"]},
+					{"title":"title","time":"2013-2015","position":"position","description":["project description","project description two"]}
+				]
+			}
+		]
+	},
+	"photo_pic":{
+		"title":"photo show",
+		"photos":
+			[	
+				{
+					"path":"/upload/person.jpg",
+					"description":"aaaaaaaaaa"
+				},
+				{
+					"path":"/upload/person.jpg",
+					"description":"aaaaaaaaaa"
+				},
+				{
+					"path":"/upload/person.jpg",
+					"description":"aaaaaaaaaa"
+				}
+			]
+	},
+	"conntacts":{
+		"title":"Contact Me",
+		"content":{
+			"phone":"12345678901",
+			"email":"taozi031@163.com or 287864431@qq.com",
+			"github":"https://github.com/IceFrozen",
+			"website":"https://jasonlees.netlify.com"
+		},
+		"picture":"/upload/person.jpg"  
+	}
+}

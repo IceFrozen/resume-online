@@ -1,0 +1,5 @@
+node_modules
+.vscode
+logs/*
+npm-debug.log
+package-lock.json

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>ShiftCV</title>
+<link rel="shortcut icon" type="image/x-icon" href="metronic/assets/global/plugins/shiftcv/images/favicon.ico"/>
+<link rel="stylesheet" type="text/css" media="all" href="metronic/assets/global/plugins/shiftcv/style/style.css">
+<link rel="stylesheet" type="text/css" media="all" href="metronic/assets/global/plugins/shiftcv/style/responsive.css">
+<!--[if lt IE 9]>
+	<script src="js/html5.js" type="text/javascript"></script>
+<![endif]-->
+</head>
+<body class="home blog blue" id="person">
+<div class="switherHead"></div>
+<div class="colored">
+  <div class="blue"></div>
+  <div class="aqua"></div>
+  <div class="green"></div>
+  <div class="yellow"></div>
+  <div class="red"></div>
+</div>
+<div class="hfeed site" id="page">
+  <header role="banner" class="site_header" id="header">
+    <div class="social_links">
+       <ul>
+        <li class="{{type}}" v-repeat="contact"><a href="{{url}}" target="_blank" title="{{title}}">{{title}}</a></li>
+      </ul> 
+    </div>
+  </header>
+  <div id="main" >
+    <div class="content_area" id="primary">
+      <div role="main" class="site_content" id="content">
+        <section class="section profile_section first odd" id="profile"> <a id="blog_page_link" href="{{profile.small.Website}}"><span class="icon-pencil icon"></span><span class="label">Blog</span></a>
+          <div class="section_header profile_section_header opened">
+            <h2 class="section_title profile_section_title vis"><a href="#"><span class="icon icon-user"></span><span class="section_name">{{profile.title}}</span></a><span class="section_icon"></span></h2>
+            <div id="profile_header">
+              <div id="profile_user">
+                <div id="profile_photo"><img src="{{profile.pic}}" alt="Jefferson Sarah" /></div>
+                <div id="profile_name_area">
+                  <div id="profile_name">
+                    <h1 id="profile_title"><span class="firstname"></span> <span class="lastname">{{profile.BigName}}</span></h1>
+                    <h4 id="profile_position">{{profile.Designer}}</h4>
+                    <h4 id="profile_position">{{profile.Designer_pos}}</h4>
+                  </div>
+                </div>
+              </div>
+              <div id="profile_data">
+                <div class="profile_row birth"> <span class="th">Birthday:</span><span class="td">{{profile.small.Birthday}}</span> </div>
+                <div class="profile_row address"> <span class="th">Address:</span><span class="td">{{profile.small.Address}}</span> </div>
+                <div class="profile_row phone"> <span class="th">Phone:</span><span class="td">{{profile.small.Phone}}</span> </div>
+                <div class="profile_row email"> <span class="th">Email:</span><span class="td">{{profile.small.Email}}</span> </div>
+                <div class="profile_row website"> <span class="th">Website:</span><span class="td"><a target="_blank" href="{{profile.small.Website}}">{{profile.small.Website}}</a></span> </div>
+                <div class="profile_row GitHub"> <span class="th">GitHub:</span><span class="td">{{profile.small.GitHub}}</span> </div>
+              </div>
+            </div>
+          </div>
+          <div class="section_body profile_section_body">
+            <div class="proile_body"> <p style="text-indent:2em" v-repeat="profile.description"><span class="legend">{{$index+1}}:&nbsp;&nbsp;&nbsp;</span>{{$value}}</p> </div>
+          </div>
+        </section>
+        <div id="mainpage_accordion_area"> 
+          
+          <!-- RESUME -->
+          <section class="section resume_section even" id="resume">
+            <div id="resume_buttons" v-on="click:jumpto('resume')">
+              <a target="_blank" id="resume_link" v-on="click:jumpto('resume')">
+                <span class="label">Print</span><span class="icon-print icon"></span>
+              </a> 
+              <a target="_blank" id="resume_link_download" v-on="click:jumpto('resume')">
+                <span class="label">Download</span>
+                <span class="icon-download icon"></span>
+              </a> 
+            </div>
+            <div class="section_header resume_section_header">
+              <h2 class="section_title resume_section_title"><a href="#"><span class="icon icon-align-left"></span><span class="section_name">{{worktime.title}}</span></a><span class="section_icon"></span></h2>
+            </div>
+            <div class="section_body resume_section_body">
+              <div class="sidebar resume_sidebar">
+                <aside class="widget widget_skills" v-repeat="worktime.skills">
+                  <div v-if="type==1">
+                    <h3 class="widget_title">>{{name}}</h3>
+                    <div class="widget_inner style_{{type}}" v-repeat="detail">
+                      <div class="skills_row odd first"><span class="caption">{{name}}</span><span class="progressbar"><span data-process="{{process}}%" class="progress {{color}}"><span class="value">{{process}}%</span></span></span></div>
+                    </div>
+                  </div>
+                  <div v-if="type==2">
+                      <h3 class="widget_title">>{{name}}</h3>
+                    <div class="widget_inner style_{{type}}">
+                      <div class="skills_row odd" v-repeat="detail"><span class="legend {{color}}"></span><span class="caption">{{name}}</span></div>
+                    </div>
+                    <!-- <div class="svg"> <svg xmlns="http://www.w3.org/2000/svg" class="piechart">
+                      <path d="M66,66 L130,66  A64,64 0 0,1 57,129 z" fill="#327ea3"></path>
+                      <path d="M66,66 L57, 129 A64,64 0 0,1 2,60 z" fill="#4ca5d0"></path>
+                      <path d="M66,66 L2,  60  A64,64 0 0,1 34,11 z" fill="#6ca338"></path>
+                      <path d="M66,66 L34, 11  A64,64 0 0,1 103,14 z" fill="#ffbc38"></path>
+                      <path d="M66,66 L103,14  A64,64 0 0,1 130,66 z" fill="#e82c0c"></path>
+                      <circle cx="66" cy="66" r="40" fill="#ffffff"></circle>
+                      </svg> </div> -->
+                  </div>
+                  <div v-if="type==3">
+                    <h3 class="widget_title">{{name}}</h3>
+                    <div class="widget_inner style_{{type}}">
+                      <div class="skills_row odd first" v-repeat="detail"><span class="caption">{{name}}</span><span class="progressbar"><span data-process="{{process}}%" class="progress {{color}}"></span></span></div>
+                  </div>
+                    <!-- <div class="svg"> <svg xmlns="http://www.w3.org/2000/svg" class="piechart">
+                      <path d="M66,66 L130,66  A64,64 0 0,1 57,129 z" fill="#327ea3"></path>
+                      <path d="M66,66 L57, 129 A64,64 0 0,1 2,60 z" fill="#4ca5d0"></path>
+                      <path d="M66,66 L2,  60  A64,64 0 0,1 34,11 z" fill="#6ca338"></path>
+                      <path d="M66,66 L34, 11  A64,64 0 0,1 103,14 z" fill="#ffbc38"></path>
+                      <path d="M66,66 L103,14  A64,64 0 0,1 130,66 z" fill="#e82c0c"></path>
+                      <circle cx="66" cy="66" r="40" fill="#ffffff"></circle>
+                      </svg> </div> -->
+                  </div>
+                </aside>
+              </div>
+              <div class="wrapper resume_wrapper">
+                <div class="category resume_category resume_category_1 first even" v-repeat="worktime.projects">
+                  <div class="category_header resume_category_header">
+                    <h3 class="category_title"><span class="category_title_icon aqua"></span>{{company}}</h3>
+                  </div>
+                  <div class="category_body resume_category_body" v-repeat="task">
+                    <article class="post resume_post resume_post_1 first even">
+                      <div class="post_header resume_post_header">
+                        <div class="resume_period"> <span class="period_from">{{time}}</span> </div>
+                        <h4 class="post_title"><span class="post_title_icon aqua"></span><a href="post-text.html">{{title}}</a></h4>
+                        <h5 class="post_subtitle">{{position}}</h5>
+                      </div>
+                      <div class="post_body resume_post_body">
+                        <p style="text-indent:2em" v-repeat="description"><span class="legend">{{$index+1}}:&nbsp;&nbsp;&nbsp;</span>{{$value}}</p>
+                      </div>
+                      <br>
+                      <hr>
+                    </article>
+                  </div>
+                  <!-- .category_body --> 
+                </div>
+             
+              </div>
+              <!-- /wrapper --> 
+            </div>
+            <!-- /section_body --> 
+          </section>
+          <!-- /RESUME--> 
+          
+          <!-- PORTFOLIO -->
+          <section class="section portfolio_section odd" id="portfolio">
+            <div class="section_header portfolio_section_header">
+              <h2 class="section_title portfolio_section_title"><a href="#"><span class="icon icon-briefcase"></span><span class="section_name">{{photo_pic.title}}</span></a><span class="section_icon"></span></h2>
+            </div>
+            <div class="section_body portfolio_section_body">
+              <div class="portfolio_wrapper">
+                <ul id="portfolio_iso_filters">
+                </ul>
+                <div>
+                <div class="portfolio_items" v-repeat="photo_pic_tmp">          
+                  <article class="post portfolio_post portfolio_post_1 first even" v-repeat="photo_pic.photos">
+                    <div class="post_pic portfolio_post_pic"> <a class="w_hover img-link img-wrap" href="{{path}}"> <span class="overlay"></span> <span class="link-icon"></span> <img src="{{path}}"/> </a> </div>
+                    <h5 class="post_subtitle">{{description}}</h5>
+                  </article>
+                  </div>
+                </div>
+                <div class="portfolio_iso_pages">
+                  <ul id="portfolio_iso_pages">
+                  </ul>
+                  <div id="portfolio_iso_pages_2"> Page <span id="portfolio_iso_pages_current">1</span> of <span id="portfolio_iso_pages_total"></span> </div>
+                </div>
+              </div>
+            </div>
+            <!-- .section_body --> 
+          </section>
+          <!-- /PORTFOLIO --> 
+          
+          <!-- CONTACTS -->
+          <section class="section contact_section even" id="contact">
+            <div class="section_header contact_section_header">
+              <h2 class="section_title contact_section_title"><a href="#"><span class="icon icon-envelope-alt"></span><span class="section_name">{{conntacts.title}}</span></a><span class="section_icon"></span></h2>
+            </div>
+            <div class="section_body contact_section_body">
+              <div id="googlemap_data">
+                <!-- <div id="sc_googlemap" style="width:100%;height:294px;" class="sc_googlemap"></div> -->
+                <div class="add_info">
+                  <div class="profile_row header ">Contact Information</div>
+                  <div class="profile_row phone">Phone：{{conntacts.content.phone}} </div>
+                  <div class="profile_row email">Email：{{conntacts.content.email}}</div>
+                  <div class="profile_row website">github：{{conntacts.content.website}}</div>
+                </div>
+              </div>
+              <div class="sidebar contact_sidebar">
+                <aside class="widget widget_qrcode_vcard" id="qrcode-vcard-widget-2">
+                  <h3 class="widget_title"> QR Code</h3>
+                  <div class="widget_inner">
+                      <img src="{{conntacts.picture}}"></img>
+                  </div>
+                </aside>
+              </div>
+              <div class="contact_form">
+                <div class="contact_form_data">
+                  <div class="sc_contact_form">
+                    <h3 class="title">Message</h3>
+                    <form action="message" method="post" id="leaveMessage">
+                      <div class="field">
+                        <label class="required" for="sc_contact_form_username">Name</label>
+                        <input type="text" name="username" id="sc_contact_form_username" />
+                      </div>
+                      <div class="field">
+                        <label class="required" for="sc_contact_form_email">Email</label>
+                        <input type="text" name="email" id="sc_contact_form_email" />
+                      </div>
+                      <div class="field message">
+                        <label class="required" for="sc_contact_form_message">Your Message</label>
+                        <textarea name="message" id="sc_contact_form_message"></textarea>
+                      </div>
+                      <div class="field message">
+                        <input type="text" name="type" id="sc_contact_form_email" value = "1" hidden/>
+                      </div>
+                      <div class="button"> <a class="enter" href="#" v-on="click:leaveMessage"><span>Submit</span></a> </div>
+                    </form>
+                    <div class="result sc_infobox"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- .section_body --> 
+          </section>
+          <!-- /CONTACT --> 
+        </div>
+        <!-- #mainpage_accordion_area --> 
+      </div>
+      <!-- #content --> 
+    </div>
+    <!-- #primary --> 
+  </div>
+  <!-- #main -->
+  
+  <footer role="contentinfo" class="site_footer" id="footer">
+    <div class="footer_copyright"> ThemeREX &copy; 2013 All Rights Reserved </div>
+  </footer>
+</div>
+<!-- #page --> 
+
+<!-- connect js --> 
+<script type="text/javascript" src="metronic/assets/global/plugins/shiftcv/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="metronic/assets/global/plugins/shiftcv/js/jquery.min.js"></script> 
+<script type="text/javascript" src="metronic/assets/global/plugins/shiftcv/js/jquery.tools.custom.js"></script> 
+<script type="text/javascript" src="metronic/assets/global/plugins/shiftcv/js/jquery.flexslider.min.js"></script> 
+<script type="text/javascript" src="metronic/assets/global/plugins/shiftcv/js/jquery.prettyPhoto.js"></script> 
+<script type="text/javascript" src="metronic/assets/global/plugins/shiftcv/js/jquery.isotope.min.js"></script> 
+<script type="text/javascript" src="metronic/assets/global/plugins/shiftcv/js/jquery.cookie.js"></script> 
+<script type="text/javascript" src="metronic/assets/global/plugins/shiftcv/js/mediaelement.min.js"></script> 
+<script type="text/javascript" src="metronic/assets/global/plugins/shiftcv/js/jquery.qrcode-0.6.0.min.js"></script> 
+<!-- <script type="text/javascript" src="metronic/assets/global/plugins/shiftcv/js/googlemap_init.js"></script>  -->
+<script type="text/javascript" src="metronic/assets/global/plugins/shiftcv/js/jquery.easing.js"></script> 
+<!-- <script type="text/javascript" src="metronic/assets/global/plugins/shiftcv/js/jquery.reject.js"></script>  -->
+<!-- <script type="text/javascript" src="metronic/assets/global/plugins/shiftcv/js/googlemap.js"></script>  -->
+<script type="text/javascript" src="metronic/assets/global/plugins/shiftcv/js/utils.js"></script> 
+<script type="text/javascript" src="metronic/assets/global/plugins/shiftcv/js/lib.js"></script>
+
+<script src="myjs/vue.js" type="text/javascript"></script>
+<script src="myjs/personData.js" type="text/javascript"></script>
+</body>
+</html>
