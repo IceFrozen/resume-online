@@ -5,7 +5,7 @@
 
 ## Overview
 
-    This is a simple resume online system make by nodejs and express and without any databases system. Well it's simple and you can do whatever you want.
+> This is a simple resume online system make by nodejs and express and without any databases system. Well it's simple and you can do whatever you want.
 
 ## Quick start
 
@@ -27,7 +27,7 @@
 
 ## How to upload your infomation?
 
-  - see ./public/upload/person.json frist
+  - see ./public/upload/person.json
 
 ---
 
