@@ -11,7 +11,7 @@
         },
         "message": {
             "type": "dateFile",
-            "filename": "message/message.log",
+            "filename": "message/message.info",
             "pattern": "-yyyy-MM-dd"
         },
         "app": {
