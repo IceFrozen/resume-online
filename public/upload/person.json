@@ -1,155 +1,265 @@
 {
-	"profile":{
-		"title":"Profile",
-		"pic":"/upload/person.jpg",
-		"BigName":"Jason lees",
-		"Designer":"Game/Server",
-		"Designer_pos":"(Nodejs, C++, java)",
-		"small":{
-			"Birthday":"1989-08",
-			"Address":"Beijing",
-			"Phone":"12345678901",
-			"Email":"taozi031@163.com",
-			"Website":"https://jasonlees.netlify.com",
-			"Github":"https://github.com/IceFrozen"
+	"profile": {
+		"title": "个人信息",
+		"pic": "/upload/person.jpg",
+		"BigName": "栗志鹏",
+		"Designer": "新浪微博高级Java工程师",
+		"Designer_pos": "(Java,Nodejs)",
+		"small": {
+			"Birthday": "1989-08",
+			"Address": "北京",
+			"Phone": "18610649547",
+			"Email": "taozi031@163.com",
+			"Website": "https://icefrozen.github.io",
+			"Github": "https://github.com/IceFrozen"
 		},
-		"description":[
-			"Poster Design: XXXXXX25th Anniversary poster (2014.02)",
-			"Poster Design: Recruiting poster for ********Club, recruiting poster with the anime characters in the background (2012.12)",
-			"Logo Design: **********Restaurant Logo (2013.10)。",
-			"and-drawn Comic: Story of xxxxxx,  the description of ******life (2011-2014)"
+		"description": [
+			"精通Java、JVM,、JMM技术，熟练应用Sprintg,Spring Boot, Spring MVC, Netty, Guava等常见的Java 主流框架。",
+			"精通Node.js和ES6 语法Async、Prmise, Vue.js，Angular.js 等各类前端框架。",
+			"熟悉Hadoop， storm, spark, flink等大数据流式处理的相关技术。",
+			"熟练使用python，熟悉一些常见的机器学习模型，如Logistic Regression、朴素贝叶斯、KNN、决策树等。",
+			"熟悉集群技术、具备一定架构，数据建模能力，熟练应用docker等虚拟化技术。",
+			"熟练使用 CentOS/Ubuntu操作系统，熟悉shell脚本编程，熟练部署gitlab、Jenkins等自动化开发环境。熟练掌握Redis，memcached、MongoDB等常用nosql和mysql等数据库，熟悉nignx，Apache等常见服务器。"
 		]
 	},
-	"contact":[
+	"contact": [
 		{
-			"title":"rss",
-			"url":"http://www.baidu.com",
-			"type":"rss"
-		},{
-			"title":"Facebook",
-			"url":"http://www.baidu.com",
-			"type":"fb"
-		},{
-			"title":"Google+",
-			"url":"http://www.baidu.com",
-			"type":"gplus"
-		},{
-			"title":"Linkedin",
-			"url":"http://www.baidu.com",
-			"type":"lnkd"
-		},{
-			"title":"Dribbble",
-			"url":"http://www.baidu.com",
-			"type":"drb"
-		},{
-			"title":"Pinterst",
-			"url":"http://www.baidu.com",
-			"type":"pin"
-		},{
-			"title":"Twitter",
-			"url":"http://www.baidu.com",
-			"type":"tw"
+			"title": "rss",
+			"url": "http://www.baidu.com",
+			"type": "rss"
 		},
 		{
-			"title":"Vimeo",
-			"url":"http://www.baidu.com",
-			"type":"vim"
+			"title": "Facebook",
+			"url": "http://www.baidu.com",
+			"type": "fb"
+		},
+		{
+			"title": "Google+",
+			"url": "http://www.baidu.com",
+			"type": "gplus"
+		},
+		{
+			"title": "Linkedin",
+			"url": "http://www.baidu.com",
+			"type": "lnkd"
+		},
+		{
+			"title": "Dribbble",
+			"url": "http://www.baidu.com",
+			"type": "drb"
+		},
+		{
+			"title": "Pinterst",
+			"url": "http://www.baidu.com",
+			"type": "pin"
+		},
+		{
+			"title": "Twitter",
+			"url": "http://www.baidu.com",
+			"type": "tw"
+		},
+		{
+			"title": "Vimeo",
+			"url": "http://www.baidu.com",
+			"type": "vim"
 		}
 	],
-	"worktime":{
-		"title":"ERSONAL WORKS",
-		"skills":[
+	"worktime": {
+		"title": "工作经历",
+		"skills": [
 			{
-				"name":"Programming skills",
-				"type":1,
-				"detail":[
-					{"name":"Nodejs","process":80,"color":"red"},
-					{"name":"c++","process":60,"color":"green"},
-					{"name":"java","process":70,"color":"blue"},
-					{"name":"python","process":50,"color":"yellow"},
-					{"name":"Shell","process":50,"color":"aqua"}
+				"name": "技能指数",
+				"type": 1,
+				"detail": [
+					{
+						"name": "java",
+						"process": 80,
+						"color": "red"
+					},
+					{
+						"name": "Nodejs",
+						"process": 80,
+						"color": "yellow"
+					},
+					{
+						"name": "python",
+						"process": 50,
+						"color": "green"
+					},
+					{
+						"name": "c++",
+						"process": 40,
+						"color": "blue"
+					},
+					{
+						"name": "Shell",
+						"process": 50,
+						"color": "aqua"
+					}
 				]
 			},
 			{
-				"name":"Other skills",
-				"type":3,
-				"detail":[
-					{"name":"Nodejs","process":80,"color":"red"},
-					{"name":"c++","process":60,"color":"green"},
-					{"name":"java","process":70,"color":"blue"},
-					{"name":"python","process":50,"color":"yellow"},
-					{"name":"Shell","process":50,"color":"aqua"}
+				"name": "其他技能",
+				"type": 2,
+				"detail": [
+					{
+						"name": "webpack",
+						"process": 80,
+						"color": "red"
+					},
+					{
+						"name": "storm",
+						"process": 60,
+						"color": "green"
+					},
+					{
+						"name": "Flink",
+						"process": 70,
+						"color": "blue"
+					},
+					{
+						"name": "redis",
+						"process": 50,
+						"color": "yellow"
+					},
+					{
+						"name": "Vue.js",
+						"process": 50,
+						"color": "aqua"
+					}
 				]
-			},
-			{
-				"name":"Language skills",
-				"type":2,
-				"detail":[
-					{"name":"Nodejs","process":80,"color":"red"},
-					{"name":"c++","process":60,"color":"green"},
-					{"name":"java","process":70,"color":"blue"},
-					{"name":"python","process":50,"color":"yellow"},
-					{"name":"Shell","process":50,"color":"aqua"}
-					]
 			}
 		],
-
-		"projects":[
+		"projects": [
 			{
-				"company":"Google Corporation",
-				"task":[
-					{"title":"title","time":"2013-2015","position":"position","description":["project description one","project description two"]},
-					{"title":"title","time":"2013-2015","position":"position","description":["project description","project description two"]},
-					{"title":"title","time":"2013-2015","position":"position","description":["project description","project description two"]},
-					{"title":"title","time":"2013-2015","position":"position","description":["project description","project description two"]}
+				"company": "新浪微博",
+				"task": [
+					{
+						"title": "微博私信、群聊业务线",
+						"time": "2017-07-至今",
+						"position": "系统开发高级工程师",
+						"description": [
+							"主要负责微博核心通讯部-消息箱的研发，维护以及调优工作。主要包括微博私信，微博群聊以及微博通讯长连接的日常产品迭代开发。以及消息箱产品相关的监控，报警等周边社区的完善。参与设计和讨论系统架构记忆核心代码的实现。",
+							"私信群聊业务线核心代码的维护，调优以及迭代开发。",
+							"设计前端机和队列机分离方案，设计高负载下的缓存策略。",
+							"设计基于令牌桶算法的限流策略。",
+							"Eva智能保障系统,采用KNN 算法对trace做智能分类以及智能报警系统。根据trace采样，对qps的极其流程图做动态可视化插件。",
+							"参与Eva智能app的设计与研发。",
+							"Winter自动化测试部署工具的研发。",
+							"消息箱长短链的设计，开发和维护。",
+							"负责全部组内项目可视化技术的管理，扩展，维护工作。"
+						]
+					}
 				]
 			},
 			{
-				"company":"Google Corporation",
-				"task":[
-					{"title":"title","time":"2013-2015","position":"position","description":["project description","project description two"]},
-					{"title":"title","time":"2013-2015","position":"position","description":["project description","project description two"]},
-					{"title":"title","time":"2013-2015","position":"position","description":["project description","project description two"]},
-					{"title":"title","time":"2013-2015","position":"position","description":["project description","project description two"]}
+				"company": "北京上达互联科技有限公司",
+				"task": [
+					{
+						"title": "千锋手游平台",
+						"time": "2016.10-2017.04",
+						"position": "服务器主程序",
+						"description": [
+							"千锋手游平台是自主研发的具有restful api 风格的平台服务器。结合对应的SDK客户端来植入第三方游戏等项目当中，用于玩家登陆验证、付费、统计玩家数据。",
+							"后端采用loopback.io框架 + redis + mogodb的架构。.",
+							"注册登录模块.",
+							"支付订单业务统计模块。",
+							"客户端sdk 包分渠道打包下载。",
+							"sdk服务器给接入方服务器发送支付成功消息请求循环队列工具",
+							"负责实现手机验证码等免登陆。",
+							"负责采用vuejs（2.0） + vue-router + webpack 架构前段。",
+							"负责设计后端数据库的模型。",
+							"负责 restful api 的规范和测试，以及编写单元测试脚本、压力测试脚本。",
+							"负责接入支付宝、爱贝支付，支付宝即时到账，等第三方支付平台。",
+							"负责编写服务器sdk的接入手册。"
+						]
+					},
+					{
+						"title": "星星领主",
+						"time": "2016.5——2016.9",
+						"position": "服务器主程序",
+						"description": [
+							"星星领主是一款养成类手游，游戏采用养成游戏经典玩法转盘来挑选有趣的道具和能量，并设置交流互动，赠送礼物，互相攻击，邀请好友协同作战等功能。",
+							"采用(pomelo2.0 ) Nodejs技术实现服务器架构，采用集群之间同步zookeeper实现服务器集群各个节点的注册和发现。",
+							"负责游戏数据模型的设计工作，并采用moogoose（mogodb数据库） ORM 来实现持久化用户数据的采集及储存功能。",
+							"项目管理采用git,技术及自主搭建jenkins + gitlab 自动化开发环境，并结合webhook来实现自动出发策划导表、客户端编译、静态数据加载等功能。",
+							"Gmtool方面采用最近流行的Vuejs（2.0）框架 +electron（nodejs 桌面应用开发套件）为基础上开发。并采用七牛云储存空间来迭代更新gmtool 套件。",
+							"采用log4js进行日志采集，并使用udp的方式发送到一套自住研发的在线日志收系统当中，将必要日志数据保存到数据库当中，并用express 框架 来进行实时日志显示",
+							"参与从立项，编码，上线等全部工作。参与整个游戏策划的过程，并在当中协调美术，策划，客户端程序工作的非配工作。督促美术，策划等游戏策划方案和美术设计方案的提交修整工作。"
+						]
+					},
+					{
+						"title": "鬼吹灯之寻龙诀",
+						"time": "2015.10——2016.05",
+						"position": "游戏服务器主程序",
+						"description": [
+							"服务器采用自主研发的C/C++框架 + lua逻辑的方案，设计模式采用Actor模式。",
+							"负责C/C++ 游戏服务器的框架设计和核心代码的研发工作，主要包括",
+							"网络模块核心代码编写。",
+							"编写测试脚本。",
+							"设计客户端协议。",
+							"处理高并发的网络消息。",
+							"处理网络二进制数据包。",
+							"数据库mysql和redis模块驱动模块。",
+							"设计开发GMtool 工具和策划表格数据导出工具。",
+							"负责架构Gitlab + jenkins 自动化的开发环境。",
+							"负责架构设计，部署方案设计，编写单元测试脚本，压测服务器，统计整理，性能优化、重要的逻辑实现等。"
+						]
+					},
+					{
+						"title": "挂机三国",
+						"time": "2014.12——2015.9",
+						"position": "游戏服务器程序",
+						"description": [
+							"挂机三国是一款挂机类卡牌游戏，主要应用技术为Node.js、pomelo开源框架主要负责游戏服务器端游戏逻辑，处理客户端请求数据，优化性能，开发游戏运维工作需要的GMtool 客户端工具。"
+						]
+					}
 				]
 			},
 			{
-				"company":"Google Corporation",
-				"task":[
-					{"title":"title","time":"2013-2015","position":"position","description":["project description","project description two"]},
-					{"title":"title","time":"2013-2015","position":"position","description":["project description","project description two"]},
-					{"title":"title","time":"2013-2015","position":"position","description":["project description","project description two"]},
-					{"title":"title","time":"2013-2015","position":"position","description":["project description","project description two"]}
+				"company": "北京云网科技有限公司",
+				"task": [
+					{
+						"title": "山海伏魔录",
+						"time": "2013.06——2014.11",
+						"position": "游戏服务器程序",
+						"description": [
+							"山海伏魔录是一款经典的手机RPG卡牌游戏；主要应用技术为Node.js、pomelo开源框架，主要负责工作为：游戏服务器端架构和框架设计与开发，以及核心模块开发、后期维护等工作。"
+						]
+					}
 				]
 			}
 		]
 	},
-	"photo_pic":{
-		"title":"photo show",
-		"photos":
-			[	
-				{
-					"path":"/upload/person.jpg",
-					"description":"aaaaaaaaaa"
-				},
-				{
-					"path":"/upload/person.jpg",
-					"description":"aaaaaaaaaa"
-				},
-				{
-					"path":"/upload/person.jpg",
-					"description":"aaaaaaaaaa"
-				}
-			]
+	"photo_pic": {
+		"title": "项目图片",
+		"photos": [
+			{
+				"path": "/upload/1.jpg",
+				"description": "星星领主"
+			},
+			{
+				"path": "/upload/2.jpg",
+				"description": "星星领主"
+			},
+			{
+				"path": "/upload/3.jpg",
+				"description": "山海伏魔录"
+			},
+			{
+				"path": "/upload/4.jpg",
+				"description": "山海伏魔录"
+			}
+		]
 	},
-	"conntacts":{
-		"title":"Contact Me",
-		"content":{
-			"phone":"12345678901",
-			"email":"taozi031@163.com or 287864431@qq.com",
-			"github":"https://github.com/IceFrozen",
-			"website":"https://jasonlees.netlify.com"
+	"conntacts": {
+		"title": "联系方式",
+		"content": {
+			"phone": "18610649547",
+			"email": "taozi031@163.com or 287864431@qq.com",
+			"github": "https://github.com/IceFrozen",
+			"website": "https://icefrozen.github.io"
 		},
-		"picture":"/upload/person.jpg"  
+		"picture": "/upload/person.jpg"
 	}
 }
